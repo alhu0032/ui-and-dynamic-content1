@@ -1,35 +1,103 @@
-body{
-    background-color:antiquewhite;
+*{
+    box-sizing: border-box;
 }
-h1 {
+.bg{
+    background-image: url(../img/bng1.jpg);   
+    
+}
+.body{
+    
+    max-width: 45rem;
+    width:45rem;
+    padding: 0 5rem;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif ;
+    line-height: 2;
+    text-align: center;
+}
+h1{
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
-  
-  
+    
 }
+p , h3{
+     font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    
+}
+
 img{
-    margin: 20px;
+
     width: 300px;
     height: 300px;
     align-content:center;
 }
-#my-input{
-    width: 53%;
-    margin-bottom: 20px;    
 
-}
-#button-input{
-    width: 60%;
+ul{
+    margin: 40px;
+  
 }
 
+ul li{
+    width: 100%;
+    list-style: none;
+    min-width: 200px;
+    text-align: left;
+    font-size:20px; 
+}
+
+ul li:before { 
+    content:"\00bb"; 
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+   
+[type="button"] {
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid #666;
+    background-color: #666;
+    color: white;
+    width:100%;
+}
+[type="button"]:hover {
+    border: 1px solid #DDD;
+    background-color: #DDD;
+    color: black;
+}
+[type="button"]:active {
+    border: 1px solid #000;
+    background-color: #000;
+    color: #FFF;
+}
+[type="text"] {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid #DDD;
+    width:100%;
+}
+.social{
+  width: 100%;
+  margin-top: 50px;
+  font-size: 2rem;
+}
+    
 .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
-  width: 30px;
+  width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 50%;
+/*  border-radius: 50%;*/    
 }
 
 .fa:hover {
@@ -53,38 +121,4 @@ img{
 .fa-linkedin {
   background: #007bb5;
   color: white;
-}
-
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-}
-    /*h1 {
-        font-size: 1.25rem;
-    }*/
-[type="button"] {
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    padding: 1rem;
-    border: 1px solid #666;
-    background-color: #666;
-    color: white;
-}
-[type="button"]:hover {
-    border: 1px solid #DDD;
-    background-color: #DDD;
-    color: #666;
-}
-[type="button"]:active {
-    border: 1px solid #000;
-    background-color: #000;
-    color: #FFF;
-}
-[type="text"] {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
-    padding: 1rem;
-    border: 1px solid #DDD;
 }
